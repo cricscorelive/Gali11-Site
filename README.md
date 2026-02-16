@@ -1,2 +1,2 @@
-# Gali11-Static
+# Gali11-Site
 Static html website
