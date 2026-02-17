@@ -9,32 +9,63 @@
 <body>
 
 <header>
-  <div class="logo">Gali11</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="how-it-works.html">How It Works</a>
-    <a href="faq.html">FAQ</a>
-  </nav>
+  <div class="logo-area">
+    <img src="images/logo.png" alt="Gali11 Logo" class="logo-img">
+    <span class="logo-text">Gali11</span>
+  </div>
+
+ <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<nav id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="how-it-works.html">How It Works</a>
+  <a href="faq.html">FAQ</a>
+</nav>
+
 </header>
 
-<section class="section">
-  <h1>About Gali11</h1>
-  <p>
-    Gali11 provides cricket-focused digital access and support services during major tournaments like IPL and World Cup.
-  </p>
+<section class="page-hero" style="background:url('images/cricket-bg.png') center/cover no-repeat;">
+  <div class="overlay">
+    <h1>About Gali11</h1>
+  </div>
+</section>
 
-  <h3>Our Focus</h3>
-  <ul>
-    <li>Reliable communication</li>
-    <li>Fast support during live matches</li>
-    <li>Dedicated assistance</li>
-  </ul>
+<section class="section">
+  <div class="cards">
+    <div class="card">
+      <h3>🏏 Cricket Focused</h3>
+      <p>Built for serious cricket followers during major tournaments.</p>
+    </div>
+    <div class="card">
+      <h3>⚡ Fast Support</h3>
+      <p>Quick assistance during live match hours.</p>
+    </div>
+    <div class="card">
+      <h3>🔒 Professional Handling</h3>
+      <p>Clear communication and structured process.</p>
+    </div>
+  </div>
 </section>
 
 <footer>
   <p>© 2026 Gali11. All Rights Reserved.</p>
 </footer>
-
+<div style="position:fixed; bottom:0; width:100%; background:#111; padding:10px; text-align:center; border-top:1px solid #FFD700;">
+  <a href="https://t.me/yourusername" style="color:#FFD700; font-weight:bold; text-decoration:none;">
+    🔥 Live Match Active – Join Now
+  </a>
+</div>
 </body>
+<script>
+function toggleMenu() {
+  var menu = document.getElementById("mobileMenu");
+  if (menu.style.display === "flex") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "flex";
+  }
+}
+</script>
+
 </html>
