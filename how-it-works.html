@@ -9,28 +9,66 @@
 <body>
 
 <header>
-  <div class="logo">Gali11</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="how-it-works.html">How It Works</a>
-    <a href="faq.html">FAQ</a>
-  </nav>
+  <div class="logo-area">
+    <img src="images/logo.png" alt="Gali11 Logo" class="logo-img">
+    <span class="logo-text">Gali11</span>
+  </div>
+
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<nav id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="how-it-works.html">How It Works</a>
+  <a href="faq.html">FAQ</a>
+</nav>
+
 </header>
 
-<section class="section">
-  <h1>How It Works</h1>
 
-  <div class="steps">
-    <div>1️⃣ Contact via Telegram</div>
-    <div>2️⃣ Verification Process</div>
-    <div>3️⃣ Access Provided</div>
+<section class="page-hero" style="background:url('images/cricket-bg.png') center/cover no-repeat;">
+  <div class="overlay">
+    <h1>How It Works</h1>
   </div>
 </section>
+
+<section class="section">
+  <div class="cards">
+    <div class="card">
+      <h3>1️⃣ Contact</h3>
+      <p>Reach us via Telegram or WhatsApp.</p>
+    </div>
+    <div class="card">
+      <h3>2️⃣ Verification</h3>
+      <p>Quick verification process.</p>
+    </div>
+    <div class="card">
+      <h3>3️⃣ Access</h3>
+      <p>Access provided during live matches.</p>
+    </div>
+  </div>
+</section>
+
 
 <footer>
   <p>© 2026 Gali11. All Rights Reserved.</p>
 </footer>
+
+<div style="position:fixed; bottom:0; width:100%; background:#111; padding:10px; text-align:center; border-top:1px solid #FFD700;">
+  <a href="https://t.me/yourusername" style="color:#FFD700; font-weight:bold; text-decoration:none;">
+    🔥 Live Match Active – Join Now
+  </a>
+</div>
+<script>
+function toggleMenu() {
+  var menu = document.getElementById("mobileMenu");
+  if (menu.style.display === "flex") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "flex";
+  }
+}
+</script>
 
 </body>
 </html>
