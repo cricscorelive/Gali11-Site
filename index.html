@@ -9,37 +9,71 @@
 <body>
 
 <header>
-  <div class="logo">Gali11</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="how-it-works.html">How It Works</a>
-    <a href="faq.html">FAQ</a>
-  </nav>
+  <div class="logo-area">
+    <img src="images/logo.png" alt="Gali11 Logo" class="logo-img">
+    <span class="logo-text">Gali11</span>
+  </div>
+
+ <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<nav id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="how-it-works.html">How It Works</a>
+  <a href="faq.html">FAQ</a>
+</nav>
+
 </header>
+
 
 <section class="hero">
   <h1>Live Cricket Exchange Access</h1>
   <p>24x7 Support During IPL & World Cup</p>
 
-  <div class="buttons">
+  <div class="hero-buttons">
     <a href="https://t.me/yourusername" class="btn primary">Join Telegram</a>
     <a href="https://wa.me/91XXXXXXXXXX" class="btn secondary">WhatsApp Support</a>
   </div>
 </section>
 
+
 <section class="section">
   <h2>Why Choose Gali11</h2>
-  <div class="features">
-    <div>⚡ Fast Response</div>
-    <div>🏏 Match-Time Support</div>
-    <div>🔒 Secure Handling</div>
+  <div class="cards">
+    <div class="card">
+      <h3>⚡ Fast Response</h3>
+      <p>Immediate support during live matches.</p>
+    </div>
+    <div class="card">
+      <h3>🏏 Match-Time Active</h3>
+      <p>Dedicated assistance during IPL & tournaments.</p>
+    </div>
+    <div class="card">
+      <h3>🔒 Secure Handling</h3>
+      <p>Professional communication and smooth process.</p>
+    </div>
   </div>
 </section>
+
 
 <footer>
   <p>© 2026 Gali11. All Rights Reserved.</p>
 </footer>
+<div style="position:fixed; bottom:0; width:100%; background:#111; padding:10px; text-align:center; border-top:1px solid #FFD700;">
+  <a href="https://t.me/yourusername" style="color:#FFD700; font-weight:bold; text-decoration:none;">
+    🔥 Live Match Active – Join Now
+  </a>
+</div>
+<script>
+function toggleMenu() {
+  var menu = document.getElementById("mobileMenu");
+  if (menu.style.display === "flex") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "flex";
+  }
+}
+</script>
 
 </body>
 </html>
