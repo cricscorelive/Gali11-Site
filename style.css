@@ -37,7 +37,7 @@ header {
 }
 
 .logo-img {
-  height: 40px;
+  height: 50px;
 }
 
 .logo-text {
@@ -67,15 +67,16 @@ nav a:hover {
 }
 
 .hero {
-  height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
-              url("images/hero.png") center/cover no-repeat;
+  position: relative;
+  background: url("images/hero.png") center/cover no-repeat;
+  background-size: cover;
+  min-height: 85vh; /* reduce from 100vh */
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding-top: 80px;
+  justify-content: center;
   text-align: center;
+  padding: 40px 20px;
+flex-direction: column;
 }
 
 .hero h1 {
@@ -182,9 +183,10 @@ footer {
   color: #FFD700;
 }
 
-@media(max-width:768px){
+/* Mobile */
 
-  nav {
+@media(max-width:768px){
+nav {
     display: none;
     flex-direction: column;
     background: #000;
@@ -202,46 +204,12 @@ footer {
   .menu-toggle {
     display: block;
   }
-}
-
-.hero-buttons {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-@media(max-width:768px){
-  .hero-buttons {
-    flex-direction: column;
-    align-items: center;
+ .hero {
+    min-height: 80vh;
+    padding: 0 15px;
+    background-position: center 25%;
+    justify-content: end;
   }
-
-  .btn {
-    width: 80%;
-    text-align: center;
-  }
-
-  .hero h1 {
-    font-size: 28px;
-  }
-
-  .hero p {
-    font-size: 16px;
-  }
-}
-
-@media(max-width:768px){
-  .hero {
-    height: 90vh;
-  }
-}
-
-
-
-/* Mobile */
-
-@media(max-width:768px){
   .hero h1 {
     font-size: 32px;
   }
@@ -250,5 +218,10 @@ footer {
   }
   header {
     padding: 15px 20px;
+  }
+
+  .btn {
+    width: 80%;
+    text-align: center;
   }
 }
